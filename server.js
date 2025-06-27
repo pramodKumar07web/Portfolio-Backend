@@ -12,7 +12,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Email Sending Endpoint
-app.post("/send-email", async (req, res) => {
+app.post("/api/send-email", async (req, res) => {
   const { name, email, message } = req.body;
 
   if (!name || !email || !message) {
